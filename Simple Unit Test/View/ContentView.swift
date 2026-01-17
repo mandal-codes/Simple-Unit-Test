@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var viewModel: ItemViewModel = ItemViewModel()
+    @State var viewModel: ItemViewModel
     var body: some View {
         NavigationStack {
             VStack {
@@ -36,5 +36,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: ItemViewModel())
 }
